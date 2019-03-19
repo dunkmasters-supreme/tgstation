@@ -48,7 +48,7 @@
 			for(var/i = 0, i < 3, i++)
 				new /obj/item/weapon/reagent_containers/glass/beaker/noreact(src)
 		if(31 to 35)
-			new /obj/item/seeds/cashseed(src)
+			new /obj/item/seeds/cash(src)
 		if(36 to 40)
 			new /obj/item/weapon/melee/baton(src)
 		if(41 to 45)

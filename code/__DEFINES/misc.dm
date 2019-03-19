@@ -165,4 +165,10 @@
 #define MAT_BANANIUM	"$bananium"
 
 //subtypesof(), typesof() without the parent path
-#define subtypesof(typepath) ( typesof(typepath) - typepath )
+#define subtypesof(typepath) ( typesof(typepath) - typepath )// Plant types
+
+// Plant types
+#define PLANT_NORMAL 0
+#define PLANT_WEED 1
+#define PLANT_MUSHROOM 2
+#define PLANT_ALIEN 3

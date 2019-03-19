@@ -220,7 +220,7 @@
 "el" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; tag = ""},/turf/simulated/floor/plasteel{tag = "icon-carpet"; icon_state = "carpet"},/area/awaymission/BMPship/Fore)
 "em" = (/obj/machinery/hydroponics,/turf/simulated/floor/plasteel{tag = "icon-green (SOUTHWEST)"; icon_state = "green"; dir = 10},/area/awaymission/BMPship/Midship)
 "en" = (/turf/simulated/floor/plasteel{tag = "icon-green"; icon_state = "green"},/area/awaymission/BMPship/Midship)
-"eo" = (/obj/machinery/seed_extractor,/obj/item/seeds/walkingmushroommycelium,/turf/simulated/floor/plasteel{tag = "icon-green"; icon_state = "green"},/area/awaymission/BMPship/Midship)
+"eo" = (/obj/machinery/seed_extractor,/obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/walkingmushroom,/turf/simulated/floor/plasteel{tag = "icon-green"; icon_state = "green"},/area/awaymission/BMPship/Midship)
 "ep" = (/obj/machinery/hydroponics,/turf/simulated/floor/plasteel{tag = "icon-green (SOUTHEAST)"; icon_state = "green"; dir = 6},/area/awaymission/BMPship/Midship)
 "eq" = (/turf/simulated/wall/shuttle{tag = "icon-swall2"; icon_state = "swall2"},/area/awaymission/BMPship/Midship)
 "er" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"; tag = ""},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; tag = ""},/turf/simulated/floor/plasteel{icon_state = "bar"},/area/awaymission/BMPship/Midship)

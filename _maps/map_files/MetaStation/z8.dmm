@@ -194,16 +194,16 @@
 "dL" = (/obj/effect/landmark/corpse/clown,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/grass,/area/planet/clown/village)
 "dM" = (/obj/item/weapon/pickaxe/drill/diamonddrill,/obj/effect/landmark/corpse/clown,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/grass,/area/planet/clown/village)
 "dN" = (/obj/structure/ore_box,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
-"dO" = (/obj/item/seeds/bananaseed,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
+"dO" = (/obj/item/seeds/banana,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
 "dP" = (/obj/item/weapon/pickaxe,/turf/simulated/floor/plating,/area/planet/clown/village)
 "dQ" = (/turf/simulated/floor/plating,/area/planet/clown/village)
 "dR" = (/obj/effect/decal/remains/human,/turf/simulated/floor/plating,/area/planet/clown/village)
 "dS" = (/obj/effect/decal/remains/human,/obj/item/clothing/suit/space/hardsuit/mining,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/grass,/area/planet/clown/village)
 "dT" = (/obj/item/weapon/paper/crumpled/bloody{info = "I was told getting the bananium would be easy...fuck...they lied... If there was any bananium to be mined left, it's gone now. Send word to my family in the Alpha Minorious Sector if you find this."},/turf/simulated/floor/grass,/area/planet/clown/village)
 "dU" = (/obj/structure/barricade/wooden,/turf/simulated/floor/grass,/area/planet/clown/village)
-"dV" = (/obj/item/seeds/bananaseed,/mob/living/simple_animal/hostile/asteroid/goldgrub,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
-"dW" = (/obj/item/seeds/bananaseed,/obj/effect/landmark/corpse/clown,/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
-"dX" = (/obj/item/seeds/bananaseed,/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
+"dV" = (/obj/item/seeds/banana,/mob/living/simple_animal/hostile/asteroid/goldgrub,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
+"dW" = (/obj/item/seeds/banana,/obj/effect/landmark/corpse/clown,/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
+"dX" = (/obj/item/seeds/banana,/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
 "dY" = (/obj/effect/landmark/corpse/clown,/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
 "dZ" = (/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
 "ea" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor{dir = 8; icon_state = "barber"},/area/planet/clown/village)
@@ -264,9 +264,9 @@
 "fd" = (/obj/effect/decal/remains/human,/obj/effect/rune,/obj/item/clothing/mask/gas/mime,/obj/effect/decal/cleanable/blood/splatter,/obj/effect/decal/cleanable/blood/gibs/core,/turf/simulated/floor/engine/cult,/area/planet/clown/town)
 "fe" = (/obj/structure/flora/ausbushes/lavendergrass,/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/grass,/area/planet/clown/village)
 "ff" = (/obj/structure/table/wood,/obj/item/clothing/mask/gas/clown_hat,/obj/item/clothing/gloves/color/rainbow/clown,/obj/item/clothing/shoes/clown_shoes{desc = "These shoes appear to be enchanted!"; name = "uhangi's shoes"; slowdown = -1},/obj/item/clothing/under/rank/clown,/obj/item/device/pda/clown,/obj/item/weapon/storage/backpack/clown,/turf/simulated/floor/grass,/area/planet/clown/village)
-"fg" = (/obj/structure/table/wood,/obj/item/seeds/cashseed,/obj/item/seeds/cashseed,/obj/item/weapon/cartridge/clown,/turf/simulated/floor/grass,/area/planet/clown/village)
-"fh" = (/obj/structure/table/wood,/obj/item/seeds/cashseed,/obj/item/seeds/cashseed,/obj/item/weapon/bikehorn,/turf/simulated/floor/grass,/area/planet/clown/village)
-"fi" = (/obj/structure/table/wood,/obj/item/seeds/cashseed,/obj/item/seeds/cashseed,/turf/simulated/floor/grass,/area/planet/clown/village)
+"fg" = (/obj/structure/table/wood,/obj/item/seeds/cash,/obj/item/weapon/cartridge/clown,/turf/simulated/floor/grass,/area/planet/clown/village)
+"fh" = (/obj/structure/table/wood,/obj/item/seeds/cash,/obj/item/weapon/bikehorn,/turf/simulated/floor/grass,/area/planet/clown/village)
+"fi" = (/obj/structure/table/wood,/obj/item/seeds/cash,/turf/simulated/floor/grass,/area/planet/clown/village)
 "fj" = (/obj/structure/sign/vacuum,/turf/indestructible{icon_state = "bananium0"; name = "bananium wall"},/area/planet/clown/village)
 "fk" = (/obj/structure/window/reinforced/fulltile,/obj/structure/grille,/turf/simulated/floor/plating/dust/airless,/area/planet/clown/village)
 "fl" = (/obj/structure/mineral_door/wood,/turf/simulated/floor/wood,/area/planet/clown/town)
@@ -444,3 +444,4 @@ dBdFdFdFdFdFdFdFdFdFdFdFdBdBdBdBdBdBdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdB
 dBdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdFdBawawawaFaFaFawaFaFaFaFaFfFawaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFawaFaFaFaFawawawawawdCdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdGdIdIdIdIdIdIdIdIdIdIdIdIdGdGdGdGgjdIdHdC
 dBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdC
 "}
+
