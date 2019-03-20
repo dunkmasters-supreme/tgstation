@@ -9,7 +9,7 @@
 	endurance = 40 // tuff like a toiger
 	yield = 4
 	growthstages = 5
-	plant_type = PLANT_WEED
+	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy)
 	mutatelist = list(/obj/item/seeds/nettle/death)
 	reagents_add = list("sacid" = 0.5)
 
@@ -23,10 +23,10 @@
 	endurance = 25
 	maturation = 8
 	yield = 2
+	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy, /datum/plant_gene/trait/stinging)
 	mutatelist = list()
 	reagents_add = list("facid" = 0.5, "sacid" = 0.5)
 	rarity = 20
-
 
 /obj/item/weapon/grown/nettle //abstract type
 	name = "nettle"
@@ -90,7 +90,7 @@
 	icon_state = "deathnettle"
 	force = 30
 	throwforce = 15
-	origin_tech = "combat=3"
+	origin_tech = "combat=5"
 
 /obj/item/weapon/grown/nettle/death/add_juice()
 	..()

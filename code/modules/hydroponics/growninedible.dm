@@ -71,6 +71,12 @@
 		loc.set_light(-G.get_lum(seed))
 	return ..()
 
+/obj/item/weapon/grown/throw_impact(atom/hit_atom)
+	if(!..()) //was it caught by a mob?
+		if(seed)
+			for(var/datum/plant_gene/trait/T in seed.genes)
+				T.on_throw_impact(src, hit_atom)
+
 /obj/item/weapon/grown/pickup(mob/user)
 	..()
 	var/datum/plant_gene/trait/glow/G = seed.get_gene(/datum/plant_gene/trait/glow)

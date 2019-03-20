@@ -1057,9 +1057,26 @@ var/list/all_supply_groups = list(supply_emergency,supply_security,supply_engine
 					/obj/item/seeds/amanita,
 					/obj/item/seeds/reishi,
 					/obj/item/seeds/banana,
-					/obj/item/seeds/eggplant/eggy)
+					/obj/item/seeds/eggplant/eggy,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random)
 	cost = 15
 	containername = "exotic seeds crate"
+
+/datum/supply_packs/organic/hydroponics/xenohydrophonics
+	name = "Xenohydrophonics Supply Crate"
+	contains = list(/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random,
+					/obj/item/seeds/random)
+	cost = 20
+	containername = "xenohydrophonics supply crate"
 
 /datum/supply_packs/organic/vending
 	name = "Bartending Supply Crate"
@@ -1390,6 +1407,7 @@ var/list/all_supply_groups = list(supply_emergency,supply_security,supply_engine
 /datum/supply_packs/misc/randomised/New()
 	manifest += "Contains any [num_contained] of:"
 	..()
+
 
 /datum/supply_packs/misc/randomised/contraband
 	num_contained = 5

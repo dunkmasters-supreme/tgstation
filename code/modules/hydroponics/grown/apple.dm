@@ -11,6 +11,7 @@
 	yield = 5
 	icon_grow = "apple-grow"
 	icon_dead = "apple-dead"
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/apple/gold)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.1)
 
@@ -52,3 +53,4 @@
 	desc = "Emblazoned upon the apple is the word 'Kallisti'."
 	icon_state = "goldapple"
 	filling_color = "#FFD700"
+	origin_tech = "biotech=4;materials=5"

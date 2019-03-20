@@ -17,10 +17,9 @@
 	production = 5
 	yield = 4
 	potency = 15
-	oneharvest = 1
 	growthstages = 4
-	plant_type = PLANT_MUSHROOM
-	reagents_add = list("morphine" = 0.35, "charcoal" = 0.35, "nutriment" = 0)
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
+	reagents_add = list("morphine" = 0.35, "anti_toxin" = 0.35, "nutriment" = 0)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/reishi
 	seed = /obj/item/seeds/reishi
@@ -43,9 +42,8 @@
 	maturation = 10
 	production = 5
 	yield = 4
-	oneharvest = 1
 	growthstages = 3
-	plant_type = PLANT_MUSHROOM
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	mutatelist = list(/obj/item/seeds/angel)
 	reagents_add = list("mushroomhallucinogen" = 0.04, "amatoxin" = 0.35, "nutriment" = 0)
 
@@ -71,9 +69,8 @@
 	production = 5
 	yield = 2
 	potency = 35
-	oneharvest = 1
 	growthstages = 3
-	plant_type = PLANT_MUSHROOM
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	reagents_add = list("mushroomhallucinogen" = 0.04, "amatoxin" = 0.8, "nutriment" = 0, "amanitin" = 0.2)
 	rarity = 30
 
@@ -97,9 +94,8 @@
 	production = 1
 	yield = 5
 	potency = 15
-	oneharvest = 1
 	growthstages = 3
-	plant_type = PLANT_MUSHROOM
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	reagents_add = list("mushroomhallucinogen" = 0.25, "nutriment" = 0.02)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/libertycap
@@ -122,9 +118,8 @@
 	production = 1
 	yield = 4
 	potency = 15
-	oneharvest = 1
 	growthstages = 3
-	plant_type = PLANT_MUSHROOM
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	mutatelist = list(/obj/item/seeds/plump/walkingmushroom)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.1)
 
@@ -186,9 +181,8 @@
 	production = 1
 	yield = 5
 	potency = 15
-	oneharvest = 1
 	growthstages = 3
-	plant_type = PLANT_MUSHROOM
+	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	reagents_add = list("nutriment" = 0.1)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/chanterelle
@@ -213,11 +207,9 @@
 	production = 1
 	yield = 3 //-> spread
 	potency = 30 //-> brightness
-	oneharvest = 1
 	growthstages = 4
-	plant_type = PLANT_MUSHROOM
 	rarity = 20
-	genes = list(/datum/plant_gene/trait/glow)
+	genes = list(/datum/plant_gene/trait/glow, /datum/plant_gene/trait/plant_type/fungal_metabolism)
 	mutatelist = list(/obj/item/seeds/glowshroom/glowcap)
 	reagents_add = list("radium" = 0.1, "phosphorus" = 0.1, "nutriment" = 0.04)
 
@@ -250,9 +242,8 @@
 	icon_grow = "glowshroom-grow"
 	icon_dead = "glowshroom-dead"
 	plantname = "Glowcaps"
-	plant_type = PLANT_MUSHROOM
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/glowshroom/glowcap
-	genes = list(/datum/plant_gene/trait/glow, /datum/plant_gene/trait/cell_charge)
+	genes = list(/datum/plant_gene/trait/glow, /datum/plant_gene/trait/cell_charge, /datum/plant_gene/trait/plant_type/fungal_metabolism)
 	mutatelist = list()
 	reagents_add = list("nutriment" = 0.04)
 	rarity = 30
