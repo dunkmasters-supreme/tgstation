@@ -134,7 +134,7 @@
 	plantname = "Moonflowers"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/moonflower
 	mutatelist = list()
-	reagents_add = list("moonshine" = 0.1, "vitamin" = 0.02, "nutriment" = 0.02)
+	reagents_add = list("moonshine" = 0.2, "vitamin" = 0.02, "nutriment" = 0.02)
 	rarity = 15
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/moonflower

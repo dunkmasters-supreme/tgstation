@@ -20,7 +20,7 @@
 	oneharvest = 1
 	growthstages = 4
 	plant_type = PLANT_MUSHROOM
-	reagents_add = list("morphine" = 0.35, "anti_toxin" = 0.35, "nutriment" = 0)
+	reagents_add = list("morphine" = 0.35, "charcoal" = 0.35, "nutriment" = 0)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/reishi
 	seed = /obj/item/seeds/reishi
@@ -74,7 +74,7 @@
 	oneharvest = 1
 	growthstages = 3
 	plant_type = PLANT_MUSHROOM
-	reagents_add = list("mushroomhallucinogen" = 0.04, "amatoxin" = 0.8, "nutriment" = 0)
+	reagents_add = list("mushroomhallucinogen" = 0.04, "amatoxin" = 0.8, "nutriment" = 0, "amanitin" = 0.2)
 	rarity = 30
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/angel
@@ -149,7 +149,7 @@
 	maturation = 5
 	yield = 1
 	mutatelist = list()
-	reagents_add = list("vitamin" = 0.05, "nutriment" = 0.12)
+	reagents_add = list("vitamin" = 0.05, "nutriment" = 0.15)
 	rarity = 30
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/walkingmushroom
@@ -219,7 +219,7 @@
 	rarity = 20
 	genes = list(/datum/plant_gene/trait/glow)
 	mutatelist = list(/obj/item/seeds/glowshroom/glowcap)
-	reagents_add = list("radium" = 0.05, "nutriment" = 0.04)
+	reagents_add = list("radium" = 0.1, "phosphorus" = 0.1, "nutriment" = 0.04)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/glowshroom
 	seed = /obj/item/seeds/glowshroom
