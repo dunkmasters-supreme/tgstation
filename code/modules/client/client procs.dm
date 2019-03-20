@@ -180,6 +180,12 @@ var/next_external_rsc = 0
 		for (var/message in clientmessages[ckey])
 			src << message
 		clientmessages.Remove(ckey)
+		
+	holder = admin_datums[ckey]
+	if(holder)
+		player_anonyname = "Admin ([rand(1, 1000)])"
+	else
+		player_anonyname = "Player ([rand(1, 1000)])"
 
 	//////////////
 	//DISCONNECT//

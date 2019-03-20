@@ -10,7 +10,7 @@
 	if(holder)
 		if(check_rights(R_ADMIN,0))//If they have +ADMIN, show hidden admins, player IC names and IC status
 			for(var/client/C in clients)
-				var/entry = "\t[C.key]"
+				var/entry = "\t[C.player_anonyname]"
 				if(C.holder && C.holder.fakekey)
 					entry += " <i>(as [C.holder.fakekey])</i>"
 				entry += " - Playing as [C.mob.real_name]"
@@ -32,7 +32,7 @@
 				Lines += entry
 		else//If they don't have +ADMIN, only show hidden admins
 			for(var/client/C in clients)
-				var/entry = "\t[C.key]"
+				var/entry = "\t[C.player_anonyname]"
 				if(C.holder && C.holder.fakekey)
 					entry += " <i>(as [C.holder.fakekey])</i>"
 				Lines += entry
@@ -41,7 +41,7 @@
 			if(C.holder && C.holder.fakekey)
 				Lines += C.holder.fakekey
 			else
-				Lines += C.key
+				Lines += C.player_anonyname
 
 	for(var/line in sortList(Lines))
 		msg += "[line]\n"
@@ -74,6 +74,6 @@
 	else
 		for(var/client/C in admins)
 			if(!C.holder.fakekey)
-				msg += "\t[C] is a [C.holder.rank]\n"
+				msg += "\t[C.player_anonyname] is a [C.holder.rank]\n"
 
 	src << msg
