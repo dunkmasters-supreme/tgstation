@@ -235,13 +235,16 @@ This is here to make the tiles around the station mininuke change when it's arme
 
 
 //==========DAT FUKKEN DISK===============
+/obj/item/weapon/disk
+	icon = 'icons/obj/module.dmi'
+	w_class = 1
+	item_state = "card-id"
+	icon_state = "datadisk0"
+
 /obj/item/weapon/disk/nuclear
 	name = "nuclear authentication disk"
 	desc = "Better keep this safe."
-	icon = 'icons/obj/items.dmi'
 	icon_state = "nucleardisk"
-	item_state = "card-id"
-	w_class = 1.0
 
 /obj/item/weapon/disk/nuclear/New()
 	..()

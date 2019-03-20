@@ -53,11 +53,24 @@
 /obj/item/weapon/disk/data
 	name = "cloning data disk"
 	icon = 'icons/obj/cloning.dmi'
-	icon_state = "datadisk0" //Gosh I hope syndies don't mistake them for the nuke disk. //I hope they do
-	item_state = "card-id"
-	w_class = 1.0
+	icon_state = "datadisk0" //Gosh I hope syndies don't mistake them for the nuke disk.
 	var/list/fields = list()
 	var/read_only = 0 //Well,it's still a floppy disk
+
+//Disk stuff.
+/obj/item/weapon/disk/data/New()
+	..()
+	icon_state = "datadisk[rand(0,6)]"
+	overlays += "datadisk_gene"
+
+
+/obj/item/weapon/disk/data/attack_self(mob/user)
+	read_only = !read_only
+	user << "<span class='notice'>You flip the write-protect tab to [src.read_only ? "protected" : "unprotected"].</span>"
+
+/obj/item/weapon/disk/data/examine(mob/user)
+	..()
+	user << "The write-protect tab is set to [src.read_only ? "protected" : "unprotected"]."
 
 
 //Find a dead mob with a brain and client.
