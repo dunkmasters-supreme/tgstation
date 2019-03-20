@@ -20,7 +20,7 @@
 	var/rigged = 0		// true if rigged to explode
 	var/minor_fault = 0 //If not 100% reliable, it will build up faults.
 	var/chargerate = 100 //how much power is given every tick in a recharger
-
+	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
 /obj/item/weapon/stock_parts/cell/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is licking the electrodes of the [src.name]! It looks like \he's trying to commit suicide.</span>")
 	return (FIRELOSS)
@@ -35,7 +35,8 @@
 
 /obj/item/weapon/stock_parts/cell/proc/updateicon()
 	overlays.Cut()
-
+	if(grown_battery)
+		overlays += (image('icons/obj/power.dmi', "grown_wires"))
 	if(charge < 0.01)
 		return
 	else if(charge/maxcharge >=0.995)
@@ -283,13 +284,14 @@
 	name = "potato battery"
 	desc = "A rechargable starch based power cell."
 	origin_tech = "powerstorage=1"
-	icon = 'icons/obj/power.dmi' //'icons/obj/hydroponics/harvest.dmi'
-	icon_state = "potato_cell" //"potato_battery"
+	icon = 'icons/obj/hydroponics/harvest.dmi'
+	icon_state = "potato"
 	charge = 100
 	maxcharge = 300
 	materials = list()
 	minor_fault = 1
 	rating = 1
+	grown_battery = TRUE //it has the overlays for wires
 
 /obj/item/weapon/stock_parts/cell/high/slime
 	name = "charged slime core"

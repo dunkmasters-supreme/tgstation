@@ -11,6 +11,7 @@
 	growthstages = 3
 	icon_grow = "pumpkin-grow"
 	icon_dead = "pumpkin-dead"
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/pumpkin/blumpkin)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.2)
 
@@ -29,6 +30,8 @@
 		new /obj/item/clothing/head/hardhat/pumpkinhead(user.loc)
 		qdel(src)
 		return
+	else
+		return ..()
 
 // Blumpkin
 /obj/item/seeds/pumpkin/blumpkin

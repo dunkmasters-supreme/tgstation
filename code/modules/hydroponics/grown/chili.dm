@@ -13,6 +13,7 @@
 	potency = 20
 	icon_grow = "chili-grow" // Uses one growth icons set for all the subtypes
 	icon_dead = "chili-dead" // Same for the dead icon
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/chili/ice, /obj/item/seeds/chili/ghost)
 	reagents_add = list("capsaicin" = 0.25, "vitamin" = 0.04, "nutriment" = 0.04)
 
@@ -53,7 +54,7 @@
 	desc = "These seeds grow into a chili said to be the hottest in the galaxy."
 	icon_state = "seed-chilighost"
 	species = "chilighost"
-	plantname = "chilighost"
+	plantname = "Ghost Chili Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/ghost_chili
 	endurance = 10
 	maturation = 10

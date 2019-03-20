@@ -18,6 +18,7 @@
 	endurance = 50
 	yield = 4
 	potency = 15
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/orange)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.05)
 
@@ -42,6 +43,7 @@
 	potency = 20
 	icon_grow = "lime-grow"
 	icon_dead = "lime-dead"
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/lime)
 	reagents_add = list("vitamin" = 0.04, "nutriment" = 0.05)
 
@@ -85,6 +87,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/shell/moneyfruit
 	icon_grow = "lime-grow"
 	icon_dead = "lime-dead"
+	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	lifespan = 55
 	endurance = 45
 	yield = 4

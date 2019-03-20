@@ -7,7 +7,6 @@
 	plantname = "Corn Stalks"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/corn
 	maturation = 8
-	oneharvest = 1
 	potency = 20
 	growthstages = 3
 	icon_grow = "corn-grow" // Uses one growth icons set for all the subtypes
@@ -43,6 +42,8 @@
 		user.unEquip(src)
 		qdel(src)
 		return
+	else
+		return ..()
 
 // Snapcorn
 /obj/item/seeds/corn/snapcorn

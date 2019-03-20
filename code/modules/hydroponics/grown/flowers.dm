@@ -10,7 +10,6 @@
 	maturation = 8
 	yield = 6
 	potency = 20
-	oneharvest = 1
 	growthstages = 3
 	icon_grow = "poppy-grow"
 	icon_dead = "poppy-dead"
@@ -75,9 +74,8 @@
 	production = 1
 	yield = 2
 	potency = 30
-	oneharvest = 1
 	growthstages = 4
-	plant_type = PLANT_WEED
+	genes = list(/datum/plant_gene/trait/plant_type/weed_hardy)
 	reagents_add = list("nutriment" = 0.04)
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/harebell
@@ -101,7 +99,6 @@
 	endurance = 20
 	production = 2
 	yield = 2
-	oneharvest = 1
 	growthstages = 3
 	icon_grow = "sunflower-grow"
 	icon_dead = "sunflower-dead"
